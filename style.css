@@ -1,0 +1,29 @@
+/*  RESET*/
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+ body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: black;
+ }
+
+ header h1{
+    text-align: center;
+    font-size: 3rem;
+    color: yellowgreen;
+    margin: 2rem;
+ }
+
+ div.wrapper{
+    width: 65%;
+    max-width: 400px;
+    margin: 3rem auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: magenta;
+    height: 600px;
+ }
