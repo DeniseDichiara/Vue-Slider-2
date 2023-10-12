@@ -1,29 +1,33 @@
-/*  RESET*/
- *{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
- }
+/*^  RESET*/
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
 
- body{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: black;
- }
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   background-color: black;
+}
 
- header h1{
-    text-align: center;
-    font-size: 3rem;
-    color: yellowgreen;
-    margin: 2rem;
- }
+header h1 {
+   text-align: center;
+   font-size: 3rem;
+   color: yellowgreen;
+   margin: 2rem;
+}
 
- div.wrapper{
-    width: 65%;
-    max-width: 500px;
-    margin: 3rem auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: magenta;
-    height: 600px;
- }
+div.wrapper {
+   width: 65%;
+   max-width: 500px;
+   margin: 3rem auto;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: magenta;
+
+   /** Una volta sistemate le dimensini dell'img posso togliere l'altezza al parent
+   /*& Once I have set the dimensions of the img I can remove the height
+   /*^ Una vez arregladas las dimensiones del img puedo quitar la altura al parent
+   /*height: 600px; */
+}
