@@ -45,23 +45,32 @@ div.wrapper {
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-div.slider-button{
+div.slider-button {
    position: absolute;
    top: 50%;
    transform: translate(-50%);
    font-size: 2rem;
 }
 
-div.slider-button.prev{
+div.slider-button:hover {
+   box-shadow: 0 0 5px #03D29F,
+      0 0 25px #03D29F,
+      0 0 50px #03D29F,
+      0 0 100px #03D29F
+}
+
+
+
+div.slider-button.prev {
    left: 0;
    margin-left: 1.5rem;
 }
 
-div.slider-button.next{
+div.slider-button.next {
    right: 0;
    margin-right: -.5rem;
 }
 
-main h2{
-   color:rgb(0, 102, 255);
+main h2 {
+   color: rgb(0, 102, 255);
 }
