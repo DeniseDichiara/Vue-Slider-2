@@ -26,10 +26,25 @@ createApp({
     methods: {
         //* Creo due funzioni per cambiare il valore dell'active index
         previousImage(){
-            this.activeIndex--;
+            //this.activeIndex--;
+
+            //* Aggiungo la condizione perchè non vada oltre il 1' elemento
+            //& IL THIS anche dentro all'if
+            if(this.activeIndex === 0){
+                this.activeIndex = this.images.length - 1;
+            } else {
+                this.activeIndex--;
+            }
         },
         nextImage(){
-            this.activeIndex++;
+            //this.activeIndex++;
+
+            //* Aggiungo la condizione perchè non vada oltre l'ultimo elemento
+            if(this.activeIndex === this.images.length - 1){
+                this.activeIndex = 0;
+            } else {
+                this.activeIndex++;
+            }
         }
         
     },

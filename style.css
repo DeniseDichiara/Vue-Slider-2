@@ -21,6 +21,14 @@ img {
    width: 100%;
    height: 550px;
    display: block;
+
+   /*object-fit:cover;
+   per non mandare l'img in stretch
+   */
+}
+
+.big-pic{
+   margin-bottom: .5rem;
 }
 
 div.wrapper {
@@ -29,6 +37,7 @@ div.wrapper {
    margin: 3rem auto;
    display: flex;
    justify-content: center;
+   flex-direction: column;
    align-items: center;
    /*background-color: magenta;
 
@@ -38,11 +47,23 @@ div.wrapper {
    /*height: 600px; */
 
    text-align: center;
-   position: relative;
    border: .1rem solid rgb(104, 102, 102);
-
+   
    /* credits: stripe */
    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+div.slide{
+   position: relative;
+   height: 725px;
+}
+
+div.thumbnail{
+   height: 100px;
+}
+
+.mini-thumbnails{
+   height: 100%;
 }
 
 div.slider-button {
@@ -73,4 +94,10 @@ div.slider-button.next {
 
 main h2 {
    color: rgb(0, 102, 255);
+   margin-top: .25rem;
+}
+
+div.thumbnails{
+   display: flex;
+
 }

@@ -31,12 +31,22 @@
                 <div class="slide">
 
                     <!--? src è v-bind dell'array images con active index come indice (prende il 1' elemento dell'array)-->
-                    <img :src="images[activeIndex]"alt="falls">
+                    <img :src="images[activeIndex]"alt="falls" class="big-pic">
+
+                    <!--? Thumbmails-->
+                    <div class="thumbnails">
+                        <div class="thumbnail" v-for="image in images">
+                            <img :src="image" alt="Waterfalls Thumbnail" class="mini-thumbnails">
+                        </div>
+                    </div>
+
                     <h2>
-                        Tinuy-an Falls
+                        <i class="fa-solid fa-heart" style="color: #00e1ff;"></i>
+                        (Water)Falls in Love 
+                        <i class="fa-solid fa-heart" style="color: #00e1ff;"></i>
                     </h2>
                     <p>
-                        E' una cascata a più livelli a Bislig, Surigao del Sur nell'isola meridionale di Mindanao, nelle Filippine. Bislig è una città conosciuta come la Booming City by the Bay.
+                        Waterfalls around the world.
                     </p>
                 </div>
 
@@ -47,13 +57,9 @@
                 <div class="slider-button next" @click="nextImage()">
                     <i class="fa-solid fa-circle-right" style="color: #00ff1e;"></i>
                 </div>
-
             </div>
 
         </main>
-
-
-
     </div>
 
     <script src="script.js"></script>
