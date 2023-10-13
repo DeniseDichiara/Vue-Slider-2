@@ -33,14 +33,18 @@
                     <!--? src è v-bind dell'array images con active index come indice (prende il 1' elemento dell'array)-->
                     <img :src="images[activeIndex]"alt="falls">
                     <h2>
-                        DRAFT
+                        Tinuy-an Falls
                     </h2>
+                    <p>
+                        E' una cascata a più livelli a Bislig, Surigao del Sur nell'isola meridionale di Mindanao, nelle Filippine. Bislig è una città conosciuta come la Booming City by the Bay.
+                    </p>
                 </div>
 
-                <div class="slider-button prev">
+                <!--? Aggiunto evento click all'icona-->
+                <div class="slider-button prev" @click="previousImage()">
                     <i class="fa-solid fa-circle-left" style="color: #00ff1e;"></i>
                 </div>
-                <div class="slider-button next">
+                <div class="slider-button next" @click="nextImage()">
                     <i class="fa-solid fa-circle-right" style="color: #00ff1e;"></i>
                 </div>
 
