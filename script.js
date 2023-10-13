@@ -18,11 +18,19 @@ createApp({
                 'https://www.journeylatinamerica.com/app/uploads/destinations/argentina/igauzu/arg_iguazu_shutterstock_1338447983-1200x800-c-center.jpg',
                 'https://www.visitbushkillfalls.com/media/824699/bushkill-falls-walkway-1-carousel.jpg?anchor=center&mode=crop&width=1490&height=745&rnd=133250177300000000',
                 'https://www.atlantatrails.com/wp-content/uploads/2017/08/minnehaha-falls-georgia-trail.jpg'
-
-            ]
+            ],
+            //* Creo una variabile che metterò dentro a :src
+            activeIndex : 0,
         }
     },
     methods: {
+        //* Creo due funzioni per cambiare il valore dell'active index
+        previousImage(){
+            this.activeIndex--;
+        },
+        nextImage(){
+            this.activeIndex++;
+        }
         
     },
 }).mount('#app');
