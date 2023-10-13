@@ -28,8 +28,13 @@ img {
 }
 
 .big-pic{
-   margin-bottom: .5rem;
+   /*margin-bottom: .5rem;*/
 }
+
+/*.pic_border{
+   border: .50rem solid #00e1ff;
+}
+*/
 
 div.wrapper {
    width: 65%;
@@ -62,7 +67,7 @@ div.thumbnail{
    height: 100px;
 }
 
-.mini-thumbnails{
+div.thumbnail img{
    height: 100%;
 }
 
@@ -99,5 +104,14 @@ main h2 {
 
 div.thumbnails{
    display: flex;
+}
 
+div.thumbnails img{
+   filter: brightness(45%);
+}
+
+/** Thumbnail visualizzata*/
+div.thumbnails img.active{
+   filter: brightness(130%);
+   border: .25rem solid #00e1ff;
 }
